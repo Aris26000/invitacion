@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nuestra Boda</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fffaf7;
+    color:#333;
+    text-align:center;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+
+.section{
+    padding:80px 20px;
+}
+
+.titulo{
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+    margin-bottom:30px;
+    color:#8c6a56;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.box{
+    background:white;
+    padding:20px;
+    min-width:120px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.numero{
+    font-size:2.5rem;
+    font-weight:bold;
+    color:#b68c6a;
+}
+
+.label{
+    margin-top:5px;
+}
+
+.evento{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:30px;
+    background:#b68c6a;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#9c7352;
+}
+
+footer{
+    padding:40px;
+    background:#f7f1ee;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.numero{
+    font-size:2rem;
+}
+
+.box{
+    min-width:90px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<p>Nuestra historia continúa...</p>
+
+<h1>ARISBETH<br>&<br> MARCO ANTONIO</h1>
+
+<p>29 de Diciembre de 2027</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="titulo">
+Cuenta Regresiva
+</h2>
+
+<div class="countdown">
+
+<div class="box">
+<div id="dias" class="numero">00</div>
+<div class="label">Días</div>
+</div>
+
+<div class="box">
+<div id="horas" class="numero">00</div>
+<div class="label">Horas</div>
+</div>
+
+<div class="box">
+<div id="minutos" class="numero">00</div>
+<div class="label">Minutos</div>
+</div>
+
+<div class="box">
+<div id="segundos" class="numero">00</div>
+<div class="label">Segundos</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="titulo">
+La Ceremonia Religiosa
+</h2>
+
+<div class="evento">
+
+<p>
+Con inmensa alegría queremos compartir contigo uno de los días más importantes de nuestras vidas.
+</p>
+
+<br>
+
+<p>
+📅 29 de Diciembre de 2027
+</p>
+
+<p>
+🕔 14:00 horas
+</p>
+
+<p>
+📍 Iglesia, San Isidro, Labrador
+</p>
+
+<p>
+Terrero, Huautla, Hidalgo
+</p>
+
+<a
+class="boton"
+href="https://maps.app.goo.gl/5KafTJR8hB1ndVvy9"
+target="_blank">
+Ver Ubicación
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="titulo">
+Sigamos Celebrando
+</h2>
+
+<div class="evento">
+
+<p>
+Al terminar la misa, te esperamos en el auditorio de la comunidad para compartir más momentos de alegría.
+</p>
+
+<br>
+
+
+<p>
+📍 Auditorio de la comunidad antes mencionada
+</p>
+
+
+<a
+class="boton"
+href="https://maps.app.goo.gl/5iEVCd2DPm9nhd8n7"
+target="_blank">
+Ver Ubicación
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="titulo">
+Confirmación de Asistencia
+</h2>
+
+<p>
+Nos encantará celebrar este día contigo.
+</p>
+
+<a
+class="boton"
+href="https://wa.me/527712104758?text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda"
+target="_blank">
+
+Confirmar por WhatsApp
+
+</a>
+
+</section>
+
+<footer>
+
+Con cariño ❤️
+
+<br><br>
+
+ARISBETH & MARCO ANTONIO
+
+</footer>
+
+<script>
+
+const fechaBoda = new Date("Dec 29, 2027 14:00:00").getTime();
+
+setInterval(() => {
+
+const ahora = new Date().getTime();
+
+const diferencia = fechaBoda - ahora;
+
+const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+document.getElementById("dias").innerHTML = dias;
+document.getElementById("horas").innerHTML = horas;
+document.getElementById("minutos").innerHTML = minutos;
+document.getElementById("segundos").innerHTML = segundos;
+
+},1000);
+
+</script>
+
+</body>
+</html>
